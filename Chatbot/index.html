@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat</title>
+    <link rel="stylesheet" href="chatbot2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="full-screen-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="chat-logo.png" alt="Small Chatbot Logo" class="sidebar-logo">
+            </div>
+            <div class="sidebar-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="sidebar-nav">
+                <button id="clear-chat-sidebar" class="sidebar-button">
+                    <i class="fas fa-trash"></i> <span>Clear Chat</span>
+                </button>
+                <button id="settings-button" class="sidebar-button">
+                    <i class="fas fa-cog"></i> <span>Settings</span>
+                </button>
+                <button id="about-button" class="sidebar-button">
+                    <i class="fas fa-info-circle"></i> <span>About</span>
+                </button>
+            </nav>
+        </aside>
+        <div class="chat-area">
+            <div class="chat-header">
+                <img src="chat-logo.png" alt="Chatbot Logo" class="header-logo">
+                <h2>Social Media Tracker Bot</h2>
+                <div class="header-reg-number"> Developed By:<br> 12310144<br>12307353<br>12307257</div>
+            </div>
+            <div class="chat-box">
+                <div class="welcome-screen" id="welcome-screen">
+                    <div class="welcome-content">
+                        <img src="chat-logo.png" alt="Chatbot Logo" class="welcome-logo">
+                        <h1>Welcome to Your Social Media Tracker!</h1>
+                        <p>Hey there! I'm here to help you track and analyze your social media performance. Click "Start Chatting" to begin typing your questions!</p>
+                        <div class="example-queries">
+                            <h3>Try typing these:</h3>
+                            <ul>
+                                <li>How can I track engagement on my latest Instagram post?</li>
+                                <li>What are some key metrics for social media performance?</li>
+                                <li>Can you give me insights on my YouTube video's reach?</li>
+                            </ul>
+                        </div>
+                        <button id="start-chatting" class="start-button">Start Chatting</button>
+                    </div>
+                </div>
+            </div>
+            <div class="input-area" id="input-area">
+                <label for="file-upload" class="file-attach">
+                    <i class="fas fa-paperclip"></i>
+                </label>
+                <input type="file" id="file-upload" class="hidden-input">
+                <div class="input-placeholder" id="input-placeholder">Click "Start Chatting" to begin!</div>
+                <input type="text" id="user-input" placeholder="Type your message..." class="hidden-input">
+                <button id="send-button" class="hidden-input" aria-label="Send message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="Chatbot2.js"></script>
+</body>
+</html>
